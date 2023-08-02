@@ -1,0 +1,129 @@
+/* gooogle fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500;1,600&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+*{
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+/* start card */
+.image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px ;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    background-color:#fff;
+    width: 100%;
+    box-shadow: 20px -20px 8px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+}
+.card::before{
+    position: absolute;
+    content: "";
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+}
+.card .text {
+display: flex;
+flex-direction: column;
+align-items: center;
+color: #333;
+}
+.card .text .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+.card .text .jop {
+    font-size: 15px;
+    font-weight: 400;
+}
+.card .media {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.card .media .link{
+display: flex;
+text-decoration: none;
+margin: 0 8px ;
+background-color: #4070f4;
+width: 34px;
+height: 34px;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 18px;
+}
+.card .buttoms{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.card .buttoms .butm{
+margin: 0 20px;
+background-color: #4070f4;
+color: #fff;
+border-radius: 24px;
+padding: 8px 24px;
+border: none;
+font-size: 14px;
+font-weight: 400;
+cursor: pointer;
+transition: all 0.3s ease ;
+}
+.card .buttoms .butm:hover {
+    background-color: #0e4bf1;
+}
+.card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.card .analytics .data{
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    border-right: 2px solid #e7e7e7;
+    margin-right: 15px;
+}
+.card .analytics .data:last-child{
+    border-right: none;
+}
+.data i{
+    font-size: 18px;
+    margin-inline-end: 6px;
+
+}
+/* end card */
